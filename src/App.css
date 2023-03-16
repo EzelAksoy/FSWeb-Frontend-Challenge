@@ -374,13 +374,13 @@ input {
 
 @media screen and (max-width: 1180px) {
   .Information_Photo {
-    width: min(23.8vw, 40rem);
-    height: min(23.8vw, 40rem);
+    width: min(30vw, 40rem);
+    height: min(30vw, 40rem);
     margin: 2rem auto;
   }
   .Information_Photo img {
-    width: min(23.8vw, 40rem);
-    height: min(23.8vw, 40rem);
+    width: min(30vw, 40rem);
+    height: min(30vw, 40rem);
     border-radius: 1rem;
   }
   .Information_Parag {
@@ -388,8 +388,8 @@ input {
     margin: 0 auto;
   }
   .Kare {
-    width: min(23.8vw, 40rem);
-    height: min(23.8vw, 40rem);
+    width: min(30vw, 40rem);
+    height: min(30vw, 40rem);
     border-radius: 1rem;
   }
   .Yuvarlak {
@@ -399,10 +399,11 @@ input {
     display: none;
   }
   .Information_div {
-    padding: 8rem 0rem 4rem 0rem;
+    padding: 0rem 0rem 4rem 0rem;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 
   .Proje_list p {
@@ -468,6 +469,6 @@ input {
     text-align: left;
   }
   .Footer a {
-    margin: 0rem;
+    margin-bottom: 1rem;
   }
 }
