@@ -1,0 +1,403 @@
+.App {
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+.Information_div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 8rem 6rem 8rem;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+}
+.Information_Parag {
+  width: min(54rem, 30rem);
+  position: relative;
+  z-index: 1;
+}
+
+.Information_Parag h2 {
+  font-size: 2.2rem;
+}
+.Information_Parag p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 4rem;
+}
+.paragraf p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.Information_Photo {
+  width: 30%;
+  position: relative;
+}
+
+.Information_Photo img {
+  width: min(23.8vw, 21.5rem);
+  height: min(23.8vw, 21.5rem);
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  z-index: 1;
+  border-radius: 2rem;
+}
+
+.Kare {
+  width: 30%;
+  position: absolute;
+  width: min(23.8vw, 21.5rem);
+  height: min(23.8vw, 21.5rem);
+  top: 3rem;
+  right: 2rem;
+  background: #2f4e8f;
+  border-radius: 2rem;
+  z-index: 0;
+}
+
+.Yuvarlak {
+  background-color: rgb(192 192 192 / 0.5);
+  width: min(32vw, 15rem);
+  height: 8rem;
+  border-radius: 0 0 8rem 8rem;
+  position: absolute;
+  left: min(40vw, 40rem);
+  top: 0rem;
+}
+
+.Çizgi {
+  position: absolute;
+  width: min(13rem);
+  height: min(1.5rem);
+  top: 4.8rem;
+  background: #2f4e8f;
+  border-radius: 2rem;
+  z-index: 0;
+  opacity: 0.5;
+}
+.Skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0rem auto 8rem auto;
+  background: white;
+  gap: 3rem;
+}
+.Skill {
+  height: 8rem;
+  width: 8rem;
+}
+
+.Skill p {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #777777;
+}
+.Profile {
+  background-color: #f4f4f4;
+}
+.Main_About {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-bottom: 5rem;
+}
+
+.About_Info {
+  display: flex;
+  flex-direction: column;
+  width: 31rem;
+  padding: 2rem;
+  position: relative;
+}
+.About_Info h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.About p {
+  padding-bottom: 0.25rem;
+}
+.Ana_Info {
+  background-color: white;
+  width: 31rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  border: 1px solid;
+  box-shadow: 5px 10px #888888;
+  border-radius: 10px;
+}
+.Ana_Info h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+  color: #834e9e;
+}
+.Info {
+  display: flex;
+  margin: 2rem auto;
+}
+.Info_Key {
+  flex-direction: column;
+  width: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-top: 2rem;
+}
+.Info_Key p {
+  padding-bottom: 1.25rem;
+}
+
+.Info_Value {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+.Info_Value p {
+  padding-bottom: 1.25rem;
+}
+
+.Çizgi_About {
+  position: absolute;
+  width: min(6rem);
+  height: min(1rem);
+  top: 3.8rem;
+  background: #82bbff;
+  border-radius: 2rem;
+  z-index: 0;
+}
+
+.Proje {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.Proje_list {
+  width: 31rem;
+  background: #ddeefe;
+  padding: 3rem 5rem 0rem 2rem;
+  border-radius: 1.5rem;
+}
+.Tools_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Tools_list h3 {
+  background-color: white;
+  border: 0.5rem solid white;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  margin: 1rem;
+  font-family: Playfair Display;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.Proje_list h2 {
+  font-family: Playfair Display;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.Proje_list p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 3rem;
+}
+
+.Linkler {
+  padding: 2rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 5rem;
+  align-items: center;
+}
+.Footer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: 0.01em;
+  text-align: right;
+  width: 31rem;
+}
+.Footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0.01em;
+  text-align: right;
+  padding: 0.5rem;
+  border: 0.2rem solid #2c0fa3;
+  border-radius: 1rem;
+  background-color: #3050a8;
+  color: #ddeefe;
+}
+.Footer a:hover {
+  background-color: #ddeefe;
+  color: #3050a8;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+  border: #000000 solid;
+}
+.Form_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+label {
+  font-size: 2rem;
+  padding: 2rem;
+}
+input {
+  display: flex;
+  font-size: 2rem;
+  border: #777777 solid 0.2rem;
+  width: 40rem;
+}
+
+.Label_Input {
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.Checkbox {
+  width: 10rem;
+}
+.Button {
+  display: flex;
+  justify-content: center;
+}
+.Button button {
+  border: 2px solid rgb(61, 89, 61);
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  width: 20rem;
+  background-color: rgb(53, 100, 58);
+  border-radius: 2rem;
+  color: #f4f4f4;
+}
+
+.Error {
+  text-align: left;
+  color: red;
+  font-size: 2rem;
+  padding-left: 20rem;
+}
+
+@media screen and (max-width: 900px) {
+  .Information_Photo {
+    display: none;
+  }
+  .Information_Parag {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Yuvarlak {
+    display: none;
+  }
+  .Çizgi {
+    display: none;
+  }
+  .Information_div {
+    padding: 8rem 0rem 4rem 0rem;
+    text-align: center;
+  }
+
+  .Proje_list p {
+    text-align: left;
+  }
+  .Proje_list h2 {
+    text-align: center;
+  }
+  .Proje_list {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Ana_Info {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+  }
+  .Form {
+    display: flex;
+  }
+}
