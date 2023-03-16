@@ -20,7 +20,7 @@ export default function Form() {
     defaultValues: {
       CompanyName: "",
       Expectations: "",
-      Salary: 0,
+      Salary: "",
     },
   });
   function onSubmit(data) {
@@ -34,6 +34,7 @@ export default function Form() {
 
   return (
     <div className="Form">
+      <div class="bg-image"></div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="Form_list">
           <div className="Label_Input">

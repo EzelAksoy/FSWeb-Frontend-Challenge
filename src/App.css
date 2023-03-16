@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 }
 .Information_Parag {
-  width: min(54rem, 30rem);
+  width: min(54rem, 40rem);
   position: relative;
   z-index: 1;
 }
@@ -37,7 +37,7 @@
   color: #000000;
 }
 .Information_Photo {
-  width: 30%;
+  width: min(23.8vw, 21.5rem);
   position: relative;
 }
 
@@ -52,7 +52,6 @@
 }
 
 .Kare {
-  width: 30%;
   position: absolute;
   width: min(23.8vw, 21.5rem);
   height: min(23.8vw, 21.5rem);
@@ -277,9 +276,10 @@
 .Footer {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  margin: 5rem;
+  gap: 4rem;
+  margin: 5rem 0rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 .Footer h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -292,11 +292,11 @@
 }
 .Footer a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2.5rem;
+  line-height: 1rem;
   letter-spacing: 0.01em;
-  text-align: right;
+  text-align: center;
   padding: 0.5rem;
   border: 0.2rem solid #2c0fa3;
   border-radius: 1rem;
@@ -312,25 +312,31 @@
   display: flex;
   justify-content: center;
   margin: 5rem auto;
-  width: 90%;
+  background-image: url("https://www.alastyr.com/blog/wp-content/uploads/2021/09/front-end-developer-.jpg");
 }
 .Form_list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   border: #000000 solid 2px;
-  padding-right: 5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  margin: 5rem auto;
 }
 label {
   font-size: 2rem;
   padding: 2rem;
   width: 15rem;
+
+  color: #fff;
 }
 input {
   display: flex;
   font-size: 2rem;
   border: #777777 solid 0.2rem;
   width: 30rem;
+
+  color: #000000;
 }
 
 .Label_Input {
@@ -341,34 +347,50 @@ input {
 
 .Button {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .Button button {
   border: 2px solid rgb(61, 89, 61);
   padding: 1rem;
   font-size: 1.5rem;
-  margin: 2rem auto;
-  width: 20rem;
-  background-color: rgb(53, 100, 58);
+  margin: 2rem 0rem;
+  width: 15rem;
+  background-color: rgb(143, 153, 144);
   border-radius: 2rem;
   color: #f4f4f4;
 }
 
 .Error {
   text-align: left;
-  color: red;
+  color: white;
   font-size: 1.5rem;
   padding-left: 20rem;
 }
+.bg-image {
+  background-image: url("https://www.google.com.tr/url?sa=i&url=https%3A%2F%2Fwww.alastyr.com%2Fblog%2Ffrontend-developer-kimdir-ne-is-yapar%2F&psig=AOvVaw0p9Qd7uqJPUFo8B6RAvcPj&ust=1679080109461000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOiogvOS4f0CFQAAAAAdAAAAABAE");
+  filter: blur(8px);
+}
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1180px) {
   .Information_Photo {
-    display: none;
+    width: min(23.8vw, 40rem);
+    height: min(23.8vw, 40rem);
+    margin: 2rem auto;
+  }
+  .Information_Photo img {
+    width: min(23.8vw, 40rem);
+    height: min(23.8vw, 40rem);
+    border-radius: 1rem;
   }
   .Information_Parag {
     width: 90%;
     margin: 0 auto;
+  }
+  .Kare {
+    width: min(23.8vw, 40rem);
+    height: min(23.8vw, 40rem);
+    border-radius: 1rem;
   }
   .Yuvarlak {
     display: none;
@@ -379,6 +401,8 @@ input {
   .Information_div {
     padding: 8rem 0rem 4rem 0rem;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .Proje_list p {
@@ -409,8 +433,8 @@ input {
   }
   input {
     padding: 0rem;
-    margin: 0;
-    width: 100%;
+    margin-left: 2rem;
+    width: 90%;
   }
   .Form_list {
     width: 100%;
@@ -430,5 +454,20 @@ input {
   }
   .Form {
     padding: 0;
+  }
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    gap: 1rem;
+  }
+  .Footer h2 {
+    width: 100%;
+    padding: 0rem;
+    text-align: left;
+  }
+  .Footer a {
+    margin: 0rem;
   }
 }
