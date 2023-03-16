@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-import styled, { StyledComponent } from "styled-components";
+import styled from "styled-components";
 import PersonelInfo from "./PersonelInfo";
 import PersonelValue from "./PersonelValue";
 import PersonelAbout from "./PersonelAbout";
@@ -22,7 +21,6 @@ function Profile() {
   const personelInfo = useSelector((state) => state.basicInfoKey);
   const personelValue = useSelector((state) => state.basicInfoValue);
   const personelAbout = useSelector((state) => state.about);
-  console.log(personelAbout);
 
   return (
     <div className="Profile">

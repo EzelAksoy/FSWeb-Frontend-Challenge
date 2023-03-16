@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+
 import styled, { StyledComponent } from "styled-components";
 import Proje from "./Proje";
 

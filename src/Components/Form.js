@@ -33,7 +33,7 @@ export default function Form() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="Form_list">
           <div className="Label_Input">
-            <label htmlFor="CompanyName">Company Name</label>
+            <label htmlFor="CompanyName">Company</label>
             <input
               id="CompanyName"
               type="text"
@@ -78,14 +78,14 @@ export default function Form() {
           <div>
             {errors.Salary && <p className="Error">{errors.Salary.message}</p>}
           </div>
-        </div>
-        <div className="Button">
-          <button type="submit" disabled={!isValid}>
-            SEND IT
-          </button>
-          <Link to="/">
-            <button type="button">MAIN PAGE</button>
-          </Link>
+          <div className="Button">
+            <button type="submit" disabled={!isValid}>
+              SEND IT
+            </button>
+            <Link to="/">
+              <button type="button">MAIN PAGE</button>
+            </Link>
+          </div>
         </div>
       </form>
     </div>

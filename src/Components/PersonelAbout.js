@@ -1,5 +1,3 @@
-import { useState } from "react-redux";
-
 function PersonelAbout(props) {
   const { aboutData } = props;
 

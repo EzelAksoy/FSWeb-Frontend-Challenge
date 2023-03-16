@@ -1,9 +1,7 @@
 import { useSelector } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { NavLink } from "react-router-dom";
+
 import Skill from "./Skill";
-import styled, { StyledComponent } from "styled-components";
+import styled from "styled-components";
 
 function Skills() {
   const SC_p = styled.p`
