@@ -8,8 +8,8 @@ function Proje(props) {
       <h2>{data.name}</h2>
       <p>{data.explanation}</p>
       <div className="Tools_list">
-        {data.tools.map((item) => (
-          <h3>{item}</h3>
+        {data.tools.map((item, index) => (
+          <h3 key={index}>{item} </h3>
         ))}
       </div>
       <div className="Linkler">

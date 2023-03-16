@@ -25,6 +25,7 @@
   font-weight: 500;
   font-size: 2.6rem;
   line-height: 4rem;
+  z-index: 1;
 }
 .paragraf p {
   font-family: "Inter";
@@ -311,6 +312,7 @@
   display: flex;
   justify-content: center;
   margin: 5rem auto;
+  width: 90%;
 }
 .Form_list {
   display: flex;
@@ -360,7 +362,7 @@ input {
   padding-left: 20rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 960px) {
   .Information_Photo {
     display: none;
   }
@@ -393,7 +395,7 @@ input {
 
 @media screen and (max-width: 500px) {
   .Ana_Info {
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding: 1rem;
@@ -421,6 +423,9 @@ input {
   }
   .Error {
     font-size: 1rem;
+    padding: 0;
+  }
+  .Form {
     padding: 0;
   }
 }

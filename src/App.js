@@ -14,8 +14,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const formData = useSelector((state) => state.form);
-  console.log(formData);
   return (
     <div>
       <FirstInformation />

@@ -4,8 +4,11 @@ import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Form() {
+  const form = useSelector((state) => state.form);
+  console.log(form);
   const dispatch = useDispatch();
   const history = useHistory();
   const {
@@ -23,6 +26,7 @@ export default function Form() {
   function onSubmit(data) {
     dispatch(formKaydet(data));
     toast.success("thank you for your message");
+    localStorage.setItem("form", JSON.stringify(data));
     setTimeout(() => {
       history.push("/");
     }, 3000);

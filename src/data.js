@@ -86,11 +86,7 @@ const Information = {
     paragraph: "Let's work together on your next project,you can just!!!",
     email: "aksoy.ezel@gmail.com",
   },
-  form: {
-    company: "",
-    expectation: "",
-    salary: "",
-  },
+  form: JSON.parse(localStorage.getItem("form")),
   formError: {
     company: "",
     expectation: "",

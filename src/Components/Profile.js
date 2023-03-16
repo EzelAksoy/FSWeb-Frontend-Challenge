@@ -30,13 +30,13 @@ function Profile() {
           <h2>Basic Information</h2>
           <div className="Info">
             <div className="Info_Key">
-              {personelInfo.map((item) => (
-                <PersonelInfo data={item} />
+              {personelInfo.map((item, index) => (
+                <PersonelInfo data={item} key={index} />
               ))}
             </div>
             <div className="Info_Value">
-              {personelValue.map((item) => (
-                <PersonelValue valueData={item} />
+              {personelValue.map((item, index) => (
+                <PersonelValue valueData={item} key={index} />
               ))}
             </div>
           </div>
@@ -45,8 +45,8 @@ function Profile() {
           <h3>About me</h3>
           <div className="Çizgi_About"></div>
           <div className="About">
-            {personelAbout.map((item) => (
-              <PersonelAbout aboutData={item} />
+            {personelAbout.map((item, index) => (
+              <PersonelAbout aboutData={item} key={index} />
             ))}
           </div>
         </div>
